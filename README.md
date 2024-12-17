@@ -2,6 +2,8 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen?style=flat-square)](/LICENSE)
 
+![psp](https://github.com/user-attachments/assets/4d631e63-5412-47ba-a2e1-5a3262cabc3b)
+
 ## Required
 
 - [PSPDEV](https://pspdev.github.io)
