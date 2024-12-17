@@ -38,8 +38,7 @@ install(TARGETS m3
 set(CMAKE_SYSTEM_NAME Generic)
 set(CMAKE_SYSTEM_PROCESSOR mips)
 
-# Example: /usr/local/pspdev or /opt/pspdev, etc. Modify according to your environment.
-set(PSPDEV /path/to/pspdev)
+set(PSPDEV $ENV{PSPDEV})
 
 set(CMAKE_C_COMPILER ${PSPDEV}/bin/psp-gcc)
 set(CMAKE_CXX_COMPILER ${PSPDEV}/bin/psp-g++)
