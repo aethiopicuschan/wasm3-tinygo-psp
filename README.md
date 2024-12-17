@@ -18,7 +18,7 @@
 
 Basically, you can use the aforementioned forked version, but just in case it becomes outdated, I’m including this information as a precaution.
 
-1. `git clone https://github.com/wasm3/wasm3.git`
+1. `git clone git@github.com:wasm3/wasm3.git`
 2. `cd wasm3`
 3. Append the following code to `CMakeLists.txt`
 
