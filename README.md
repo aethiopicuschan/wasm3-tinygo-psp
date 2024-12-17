@@ -8,21 +8,22 @@
 - [TinyGo](https://tinygo.org)
 - [Wasm3](https://github.com/wasm3/wasm3)
   - You need compile it with PSP toolchain
+  - or You can use my forked version [wasm3-for-psp](https://github.com/aethiopicuschan/wasm3-for-psp)
 
 ## How to build
 
 ### Wasm3
+
+Basically, you can use the aforementioned forked version, but just in case it becomes outdated, I’m including this information as a precaution.
 
 1. `git clone https://github.com/wasm3/wasm3.git`
 2. `cd wasm3`
 3. Append the following code to `CMakeLists.txt`
 
 ```cmake
-install(FILES
-    ${PROJECT_SOURCE_DIR}/source/wasm3.h
-    ${PROJECT_SOURCE_DIR}/source/m3_api_wasi.h
-    # Add other headers as needed
-    DESTINATION ${CMAKE_INSTALL_INCLUDEDIR})
+install(DIRECTORY "${PROJECT_SOURCE_DIR}/source/"
+        DESTINATION "${CMAKE_INSTALL_INCLUDEDIR}"
+        FILES_MATCHING PATTERN "*.h")
 
 install(TARGETS m3
     ARCHIVE DESTINATION ${CMAKE_INSTALL_LIBDIR}
